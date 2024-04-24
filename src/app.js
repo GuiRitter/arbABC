@@ -2,7 +2,7 @@
   Form / application "onsubmit" handler, and analytics.
 */
 
-var jsonabc = require('jsonabc');
+import * as jsonabc from '/jsonabc';
 
 window.appSort = appSort;
 
