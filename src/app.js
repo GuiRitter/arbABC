@@ -4,11 +4,12 @@
 
 // import { sort } from 'jsonabc';
 
+function jsonabc_isArray(val) { return Object.prototype.toString.call(val) === '[object Array]'; }
 function jsonabc_isPlainObject(val) { return Object.prototype.toString.call(val) === '[object Object]'; }
 function jsonabc_sortObj(un, noarray) {
     noarray = noarray || false;
     var or = {};
-    if (isArray(un)) {
+    if (jsonabc_isArray(un)) {
         if (noarray) { or = un; } else { or = un.sort(); }
         or.forEach(function (v, i) { or[i] = jsonabc_sortObj(v, noarray); });
         if (!noarray) {
