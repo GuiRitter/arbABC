@@ -7,34 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="MobileOptimized" content="width">
-    <meta name="description" content="Sorts JSON object alphabetically. It supports nested objects, arrays and collections. Works offline and beautifies JSON object too.">
+    <meta name="description" content="Sorts .ARB translation files.">
     <meta name="HandheldFriendly" content="true">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="keywords" content="sort, json, alphabetically, sort json, sort json alphabetically, sort object alphabetically, JSON, lint">
+    <meta name="keywords" content="sort, ARB, json, alphabetically, sort json, sort json alphabetically, sort object alphabetically, JSON, lint">
     <meta name="theme-color" content="#e6a117">
     <meta name="msapplication-navbutton-color" content="#e6a117">
     <meta name="apple-mobile-web-app-status-bar-style" content="#e6a117">
-    <title>JSON ABC - Sort JSON Alphabetically</title>
+    <title>Sort .ARB files Alphabetically</title>
     <link href="style/app.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="h">
         <span>
-            <h2>JSON ABC</h2>
+            <h2>.ARB SORT</h2>
             <h4>
-                <em>Sorts JSON alphabetically</em>
+                <em>Sorts .ARB translation files alphabetically</em>
             </h4>
         </span>
-
-        <div class="ad">
-            <style> </style>
-            <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-            <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rath">
-                <img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee">
-                <span style="margin-left:5px">Buy me a coffee</span>
-            </a>
-        </div>
     </div>
 
     <form onsubmit="appSort(event, 't')">
@@ -45,13 +36,12 @@
         <label for="noarray">Spare plain Arrays</label>
     </div>
     <div class="m">
-        <textarea id="t" class="t" name="jsonabc" placeholder="Paste your unsorted JSON here"
-          aria-label="Paste your unsorted JSON here" spellcheck="false" required aria-required="true"></textarea>
+        <textarea id="t" class="t" name="jsonabc" placeholder="Paste your unsorted .ARB file here"
+          aria-label="Paste your unsorted .ARB file here" spellcheck="false" required aria-required="true"></textarea>
         <input type="submit" class="f" value="SORT ABC" data-Was-onclick="sort()">
         <p>
             <h3 class="c">
-                <a href="https://github.com/ShivrajRath/jsonabc" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;
-                <a href="https://novicelab.org/jsonsortdiff" target="_blank">JSON abc and diff</a>&nbsp;&nbsp;&nbsp;
+                Based on <a href="https://github.com/ShivrajRath/jsonabc" target="_blank">JSON ABC</a>&nbsp;&nbsp;&nbsp;                
             </h3>
         </p>
     </div>
